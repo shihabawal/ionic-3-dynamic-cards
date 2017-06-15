@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-grid >
+		<ion-row>
+		
+			<ion-col *ngFor="let cols of col">
+				<ion-card>
+				  <img src="{{cols.imgURL}}"/>
+				  <ion-card-content>
+				    <ion-card-title id="card-title">
+				      {{cols.title}}
+				      </ion-card-title>
+				      <ion-row>
+				    	<ion-col col-4><button ion-button small class="item-text-wrap">{{cols.button1}}</button></ion-col>
+				    	<ion-col col-4><button ion-button small class="item-text-wrap">{{cols.button2}}</button></ion-col>
+				    	<ion-col col-4><button ion-button small class="item-text-wrap">{{cols.button3}}</button></ion-col>
+				      </ion-row>
+				  </ion-card-content>
+				</ion-card>
+			</ion-col>
+		
+		</ion-row>
+	</ion-grid>
+</ion-content>
